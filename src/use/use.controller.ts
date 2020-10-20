@@ -15,7 +15,8 @@ export class UseController {
         return this.useService.getUseData()
 
     }
-    // 用装饰器@Body来获取post请求的参数
+    // 用方法参数装饰器@Body来获取post请求的参数
+    // 方法装饰器
     @Post('add')
     postUse(@Body() body, @Headers() Headers, @Response() res): void {
         console.log(body);
@@ -56,5 +57,6 @@ export class UseController {
             }]
         })
     }
+
 
 }

@@ -6,3 +6,5 @@ export class UseService {
         return "111"
     }
 }
+
+// 相当于export {UseService};
